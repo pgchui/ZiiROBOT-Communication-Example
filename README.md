@@ -9,7 +9,7 @@ The receiving agent then prints out the received signals, which details the powe
 0x09
 # I2C Packet
 ```
-int power1, power2; // power of left and right motor respectively
+int8_t power1, power2; // power of left and right motor respectively
 int8_t command[4];
 command[0] = 'l';
 command[1] = power1; // [-100, 100]
