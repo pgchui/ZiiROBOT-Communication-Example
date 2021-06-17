@@ -17,6 +17,6 @@ command[2] = 'r';
 command[3] = power2; // [-100, 100]
 ```
 # I2C Bus Pull-Up Resistors
-By default, ZiiROBOT's on-board pull-up resistors of I2C bus are disconnected. To make the I2C bus work properly, enable the internal pull-up resistors of your microcontroller or connect the jumps to use on-board pull-up resistors.
+By default, ZiiROBOT's on-board pull-up resistors of I2C bus are disconnected. To make the I2C bus work properly, enable the internal pull-up resistors of your microcontroller or connect the jumpers to use on-board pull-up resistors.
 # Commander
 Commander folder contains an example project of sending commands to ZiiROBOT series robots from an Seeeduino XIAO. The project can be used as a start point of developing your own software to control the robot from a device of your choice instead of using the Wireless Module that comes with the robot. 
