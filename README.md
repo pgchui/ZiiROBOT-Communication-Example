@@ -16,3 +16,5 @@ command[1] = power1; // [-100, 100]
 command[2] = 'r';
 command[3] = power2; // [-100, 100]
 ```
+# Commander
+Commander folder contains an example project of sending commands to ZiiROBOT series robots from an Seeeduino XIAO. The project can be used as a start point of developing your own software to control the robot from a device of your choice instead of using the Wireless Module that comes with the robot. 
