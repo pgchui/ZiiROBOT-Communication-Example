@@ -39,23 +39,21 @@ void stop(uint8_t address){
 }
 
 void setup() {
-  // put your setup code here, to run once:
   Serial.begin(9600);
-  pinMode(4, INPUT_PULLUP);
-  pinMode(5, INPUT_PULLUP);
+  pinMode(4, INPUT_PULLUP); // enable internal pull-up resistor of SDA
+  pinMode(5, INPUT_PULLUP); // enable internal pull-up resistor of SCL
   Wire.begin();
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  moveStraight(80, address);
+  moveStraight(80, address);  // move forward at power of 80%
   delay(1000);
-  turn(30, 80, address);
+  turn(30, 80, address);  // turn left at power of 30% (left) and 80% (right)
   delay(1000);
-  turn(80, 30, address);
+  turn(80, 30, address);  // turn right at power of 80% (left) and 30% (right)
   delay(1000);
-  moveStraight(-60, address);
+  moveStraight(-60, address); // move back at power of 60%
   delay(1000);
-  stop(address);
+  stop(address);  // stop
   delay(1000);
 }
